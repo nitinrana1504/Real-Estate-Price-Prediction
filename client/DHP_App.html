@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Delhi Home Price Prediction</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="DHP_App.js"></script>
+    <link rel="stylesheet" href="DHP_App.css">
+</head>
+<body>
+    <div class="img"></div>
+    <form class="form">
+        <h2>Delhi Home Price Prediction</h2>
+        <h2>Area (Square Feet)</h2>
+        <input class="Area" type="text" id="uiSqft" class="floatLabel" name="Squareft" value="1000">
+        <h2>BHK</h2>
+        <div class="switch-field">
+            <input type="radio" id="radio-bhk-1" name="uiBHK" value="1" checked/>
+            <label for="radio-bhk-1">1</label>
+            <input type="radio" id="radio-bhk-2" name="uiBHK" value="2"/>
+            <label for="radio-bhk-2">2</label>
+            <input type="radio" id="radio-bhk-3" name="uiBHK" value="3"/>
+            <label for="radio-bhk-3">3</label>
+            <input type="radio" id="radio-bhk-4" name="uiBHK" value="4"/>
+            <label for="radio-bhk-4">4</label>
+            <input type="radio" id="radio-bhk-5" name="uiBHK" value="5"/>
+            <label for="radio-bhk-5">5</label>
+            <input type="radio" id="radio-bhk-6" name="uiBHK" value="6"/>
+            <label for="radio-bhk-6">6</label>
+        </div>
+        <h2>Bathrooms</h2>
+        <div class="switch-field">
+            <input type="radio" name="uiBathroom" id="radio-bath-1" value="1"/>
+            <label for="radio-bath-1">1</label>
+            <input type="radio" name="uiBathroom" id="radio-bath-2" value="2" checked/>
+            <label for="radio-bath-2">2</label>
+            <input type="radio" name="uiBathroom" id="radio-bath-3" value="3"/>
+            <label for="radio-bath-3">3</label>
+            <input type="radio" name="uiBathroom" id="radio-bath-4" value="4"/>
+            <label for="radio-bath-4">4</label>
+            <input type="radio" name="uiBathroom" id="radio-bath-5" value="5"/>
+            <label for="radio-bath-5">5</label>
+            <input type="radio" name="uiBathroom" id="radio-bath-6" value="6"/>
+            <label for="radio-bath-6">6</label>
+        </div>
+        <h2>Parking</h2>
+        <div class="switch-field">
+            <input type="radio" name="uiParking" id="radio-parking-1" value="1" checked/>
+            <label for="radio-parking-1">1</label>
+            <input type="radio" name="uiParking" id="radio-parking-2" value="2"/>
+            <label for="radio-parking-2">2</label>
+            <input type="radio" name="uiParking" id="radio-parking-3" value="3"/>
+            <label for="radio-parking-3">3</label>
+            <input type="radio" name="uiParking" id="radio-parking-4" value="4"/>
+            <label for="radio-parking-4">4</label>
+            <input type="radio" name="uiParking" id="radio-parking-5" value="5"/>
+            <label for="radio-parking-5">5</label>
+            <input type="radio" name="uiParking" id="radio-parking-6" value="6"/>
+            <label for="radio-parking-6">6</label>
+        </div>
+        <h2>Locality</h2>
+        <div>
+            <select class="Locality" name="" id="uiLocality">
+                <option value="" disabled="disabled" selected="selected">Choose a Locality</option>
+            </select>
+        </div>
+        <h2>Furnishing</h2>
+        <div>
+            <select class="Furnishing" name="" id="uiFurnishing">
+                <option value="" disabled="disabled" selected="selected">Choose a Furnishing</option>
+            </select>
+        </div>
+        <h2>Type</h2>
+        <div>
+            <select class="Type" name="" id="uiType">
+                <option value="" disabled="disabled" selected="selected">Choose type</option>
+            </select>
+        </div>
+        <button class="submit" onclick="onClickedEstimatePrice()" type="button">Estimate Price</button>
+        <div id="uiEstimatedPrice" class="result"><h2></h2></div>
+    </form>
+</body>
+</html>
